@@ -21,9 +21,9 @@ function TodoItem(props) {
         </label>
       </div>
       {/* Mostrar el estado de la tarea */}
-      <span className={`ml-3 text-sm ${props.completed ? 'text-green-600' : 'text-red-600'} dark:text-neutral-500`}>
-        {props.completed ? 'Completada' : 'Pendiente'}
-      </span>
+      <span className={`ml-3 text-sm sm:text-base lg:text-lg ${props.completed ? 'text-green-600' : 'text-red-600'} dark:text-neutral-500`}>
+  {props.completed ? 'Completada' : 'Pendiente'}
+</span>
     </li>
   );
 }
